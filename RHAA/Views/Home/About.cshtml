@@ -1,7 +1,18 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "Today's News:";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<h2>@ViewBag.Title</h2>
+
+<p>
+    <ul>
+        <li><a href="@ViewBag.Posts[0].Shortlink">@ViewBag.Posts[0].Title</a></li>
+        <li><a href="@ViewBag.Posts[0].Shortlink">@ViewBag.Posts[1].Title</a></li>
+        <li><a href="@ViewBag.Posts[0].Shortlink">@ViewBag.Posts[2].Title</a></li>
+        <li><a href="@ViewBag.Posts[0].Shortlink">@ViewBag.Posts[3].Title</a></li>
+        <li><a href="@ViewBag.Posts[0].Shortlink">@ViewBag.Posts[4].Title</a></li>
+    </ul>
+</p>
+
+
 
 <p>Use this area to provide additional information.</p>
